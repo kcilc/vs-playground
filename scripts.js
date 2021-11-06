@@ -1,4 +1,5 @@
 function insertGreeting(phrase) {
+    console.log(phrase);
     let textual = document.getElementById('phrase-wrapper');
     textual.innerText(phrase);
 }
