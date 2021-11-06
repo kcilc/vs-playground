@@ -2,7 +2,7 @@
     --primary-clr-100: rgb(255, 253, 238);
     --primary-clr-900: rgb(4, 2, 15);
 
-    --font-stk-main: Helvetica, sans-serif;
+    --font-stk-main: "JetBrains Mono", monospace;
 }
 
 body.dark {
