@@ -3,4 +3,4 @@ function insertGreeting(phrase) {
     textual.innerText(phrase);
 }
 
-insertGreeting('We\'re live!');
+insertGreeting('We re live!');
