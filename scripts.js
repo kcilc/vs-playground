@@ -3,4 +3,4 @@ function insertGreeting(phrase) {
     textual.innerText = phrase;
 }
 
-window.addEventListener('DOMContentLoaded', ()=> insertGreeting('We re live!'));
+window.addEventListener('DOMContentLoaded', ()=> insertGreeting('We\'re live!'));
