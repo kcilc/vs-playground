@@ -3,4 +3,4 @@ function insertGreeting(phrase) {
     textual.innerText(phrase);
 }
 
-window.onload = insertGreeting('We\'re live!');
+window.addEventListener('load', insertGreeting('We\'re live!'));
