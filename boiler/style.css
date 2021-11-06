@@ -1,0 +1,14 @@
+:root {
+    --primary-clr-100: rgb(241, 238, 219);
+    --primary-clr-900: rgb(4, 2, 15);
+}
+
+body.dark {
+    --primary-clr-900: rgb(241, 238, 219);
+    --primary-clr-100: rgb(4, 2, 15);
+}
+
+body {
+    background-color: var(--primary-clr-100);
+    color: var(--primary-clr-900);
+}
