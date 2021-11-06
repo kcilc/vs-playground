@@ -1,1 +1,6 @@
-console.log('I\'m alive!');
+function insertGreeting(phrase) {
+    let textual = document.getElementById('phrase-wrapper');
+    textual.innerText(phrase);
+}
+
+window.onload = insertGreeting('We\'re live!');

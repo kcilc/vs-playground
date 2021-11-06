@@ -1,6 +1,8 @@
 :root {
     --primary-clr-100: rgb(241, 238, 219);
     --primary-clr-900: rgb(4, 2, 15);
+
+    --font-stk-main: Helvetica, sans-serif;
 }
 
 body.dark {
@@ -11,4 +13,15 @@ body.dark {
 body {
     background-color: var(--primary-clr-100);
     color: var(--primary-clr-900);
+    font-family: var(--font-stk-main);
+}
+
+.absolute {
+    position: absolute;
+    inset: 0;
+}
+
+.center {
+    display: grid;
+    align-content: center;
 }
