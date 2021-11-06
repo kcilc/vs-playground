@@ -23,7 +23,7 @@ body {
 
 .center {
     display: grid;
-    align-items: center;
+    place-content: center;
 }
 
 .center > * {
