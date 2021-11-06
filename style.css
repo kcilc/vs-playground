@@ -1,12 +1,12 @@
 :root {
-    --primary-clr-100: rgb(241, 238, 219);
+    --primary-clr-100: rgb(255, 253, 238);
     --primary-clr-900: rgb(4, 2, 15);
 
     --font-stk-main: Helvetica, sans-serif;
 }
 
 body.dark {
-    --primary-clr-900: rgb(241, 238, 219);
+    --primary-clr-900: rgb(255, 253, 238);
     --primary-clr-100: rgb(4, 2, 15);
 }
 
