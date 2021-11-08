@@ -1,0 +1,35 @@
+:root {
+    --primary-clr-100: rgb(255, 253, 238);
+    --primary-clr-900: rgb(4, 2, 15);
+
+    --font-stk-main: "JetBrains Mono", monospace;
+}
+
+body.dark {
+    --primary-clr-900: rgb(255, 253, 238);
+    --primary-clr-100: rgb(4, 2, 15);
+}
+
+body {
+    background-color: var(--primary-clr-100);
+    color: var(--primary-clr-900);
+    font-family: var(--font-stk-main);
+}
+
+.absolute {
+    position: absolute;
+    inset: 0;
+}
+
+.center {
+    display: grid;
+    place-content: center;
+}
+
+.center > * {
+    display: inline-block;
+}
+
+h1 {
+    font-weight: 800;
+}
