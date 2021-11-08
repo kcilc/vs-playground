@@ -1,35 +1,77 @@
 :root {
-    --primary-clr-100: rgb(255, 253, 238);
-    --primary-clr-900: rgb(4, 2, 15);
-
-    --font-stk-main: "JetBrains Mono", monospace;
+	--bg-clr: #f9f6ff;
+	--txt-clr: #235;
+	--txt-drk: #001;
+	--txt-mtd-lt: #2351;
+	--txt-mtd: #2353;
+	--txt-mtd-drk: #2359;
 }
 
-body.dark {
-    --primary-clr-900: rgb(255, 253, 238);
-    --primary-clr-100: rgb(4, 2, 15);
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 body {
-    background-color: var(--primary-clr-100);
-    color: var(--primary-clr-900);
-    font-family: var(--font-stk-main);
+	font-family: "Merriweather", serif;
+	background: var(--bg-clr);
+	color: var(--txt-clr);
 }
 
-.absolute {
-    position: absolute;
-    inset: 0;
+article {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-content: center;
+	z-index: -1;
 }
 
-.center {
-    display: grid;
-    place-content: center;
+.hidden {
+	display: none;
 }
 
-.center > * {
-    display: inline-block;
+h1,
+input {
+	font-size: clamp(2rem, 7vw, 7rem);
+	margin: 1em;
 }
 
-h1 {
-    font-weight: 800;
+input {
+	font-family: inherit;
+	width: calc(100% - 2em);
+	border: 0.125rem solid var(--txt-mtd-drk);
+	background: var(--bg-clr);
+	color: var(--txt);
+}
+
+input:hover {
+	background: var(--txt-mtd-lt);
+}
+
+input:focus {
+	border: 0.125rem solid var(--txt-clr);
+}
+
+#edit {
+	float: right;
+	border: 0;
+	border-radius: 0.5em;
+	background: none;
+	color: inherit;
+	padding: 1em;
+	margin: 0;
+}
+
+#edit:hover {
+	background: var(--txt-mtd);
+	color: var(--txt-drk);
+}
+
+#edit:focus {
+	outline: 0.25em solid currentColor;
+}
+
+#edit:active {
+	background: var(--txt-mtd-drk);
 }
