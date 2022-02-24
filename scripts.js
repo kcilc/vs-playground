@@ -1,14 +1,7 @@
-const input = window.localStorage;
-if (input.getItem("text") !== undefined)
-	document.getElementById("message").innerText = input.getItem("text");
-
-window.addEventListener("DOMContentLoaded", () => {
-	document.getElementById("edit").addEventListener("click", handleClick);
-});
+const editor = document.getElementById("editor");
+const message = document.getElementById("message");
 
 function handleClick(e) {
-	const editor = document.getElementById("editor");
-	const message = document.getElementById("message");
 
 	if (editor.classList.contains("hidden")) {
 		editor.classList.remove("hidden");
@@ -20,8 +13,11 @@ function handleClick(e) {
 		message.classList.remove("hidden");
 		editor.classList.add("hidden");
 		message.innerText = editor.children[0].value;
-		window.localStorage.setItem("text", message.innerText);
+		localStorage.setItem("text", message.innerText);
 	}
 
 	e.preventDefault();
 }
+
+message.innerText = localStorage.getItem("text") ?? 'Edit this!';
+window.addEventListener("DOMContentLoaded", () => editor.addEventListener("click", handleClick));
