@@ -2,7 +2,6 @@ const editor = document.getElementById("editor");
 const message = document.getElementById("message");
 
 function handleClick(e) {
-
 	if (editor.classList.contains("hidden")) {
 		editor.classList.remove("hidden");
 		message.classList.add("hidden");
@@ -20,4 +19,4 @@ function handleClick(e) {
 }
 
 message.innerText = localStorage.getItem("text") ?? 'Edit this!';
-window.addEventListener("DOMContentLoaded", () => editor.addEventListener("click", handleClick));
+window.addEventListener("DOMContentLoaded", () => editor.addEventListener("submit", handleClick));

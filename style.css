@@ -38,24 +38,24 @@ svg {
 }
 
 h1,
-input {
+textarea {
 	font-size: clamp(2rem, 7vw, 7rem);
 	margin: 1em;
 }
 
-input {
+textarea {
 	font-family: inherit;
-	width: calc(100% - 2em);
+	width: max-content;
 	border: 0.125rem solid var(--txt-mtd-drk);
 	background: var(--bg-clr);
 	color: var(--txt);
 }
 
-input:hover {
+textarea:hover {
 	background: var(--txt-mtd-lt);
 }
 
-input:focus {
+textarea:focus {
 	border: 0.125rem solid var(--txt-clr);
 }
 
